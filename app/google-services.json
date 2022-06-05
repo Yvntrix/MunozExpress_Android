@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "666014466943",
+    "firebase_url": "https://munosxpress-default-rtdb.firebaseio.com",
+    "project_id": "munosxpress",
+    "storage_bucket": "munosxpress.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:666014466943:android:1b9b4d060e1798e4d0504a",
+        "android_client_info": {
+          "package_name": "com.android.munozexpress"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "666014466943-joh6pu9s50n0ckvhad2c2sb5j8jff7cl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyLGdmXf0QEYTg7LXBMPfvC5u6HOg2w-I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "666014466943-joh6pu9s50n0ckvhad2c2sb5j8jff7cl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

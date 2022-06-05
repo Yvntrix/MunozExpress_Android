@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/iconIv"
+        android:layout_width="200dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/logo"/>
+    <LinearLayout
+        android:id="@+id/phoneLl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/please_enter_your_phone_number_to_continue"
+            android:layout_marginStart="10dp"
+            android:textColor="#444444"/>
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="62dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_input"
+                android:hint="+63"
+                android:inputType="none"
+                android:cursorVisible="true"
+                android:padding="12dp"
+                android:textSize="22sp"
+                android:textAlignment="center"
+                android:textColorHint="#555"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="10dp"
+                android:enabled="false"
+                />
+            <EditText
+                android:id="@+id/phoneEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_input"
+                android:hint="9876543210"
+                android:inputType="phone"
+                android:padding="10dp"
+                android:textSize="24sp"
+                android:textColor="#000"
+                android:textColorHint="#777"
+                android:layout_marginEnd="10dp"
+                android:maxLength="10"
+
+                />
+        </LinearLayout>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/signRider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:layout_gravity="end"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="10dp"
+            android:tooltipText="Rider Login"
+            app:cardElevation="4dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:src="@drawable/ic_baseline_sports_motorsports_24" />
+
+        </androidx.cardview.widget.CardView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+        <android.widget.Button
+            android:id="@+id/phoneContinueBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/custom_button"
+            android:textColor="#f74d4e"
+            android:text="Continue"/>
+
+    </LinearLayout>
+
+<!--    CODE SHIZZZ-->
+    <LinearLayout
+        android:id="@+id/codeLl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/codeSentDescription"
+        style="@style/TextAppearance.MaterialComponents.Caption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Verification Code"
+        android:textAlignment="center"
+        android:textSize="16dp"
+        android:textColor="#333"/>
+
+        <com.chaos.view.PinView
+            android:id="@+id/pinView"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:inputType="phone"
+            app:lineColor="@color/purple_500"
+            app:lineWidth="1.5dp"
+            android:hint="@string/pin"
+            app:itemSpacing="8dp"
+            android:textColorHint="#555"
+            app:itemRadius="10dp"
+            app:itemCount="6"
+            style="@style/PinWidget.PinView" />
+
+
+    <TextView
+        android:id="@+id/resendCodeTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TextAppearance.MaterialComponents.Caption"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textColor="#333"
+        android:textSize="16dp"
+        android:text="@string/didn_t_get_otp_resend"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    <android.widget.Button
+        android:background="@drawable/custom_button"
+        android:id="@+id/codeSubmitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#f74d4e"
+        android:text="Submit"/>
+    </LinearLayout>
+</LinearLayout>
